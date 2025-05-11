@@ -35,7 +35,7 @@ return {
                 suppressWhenArgumentMatchesName = true,
               },
               variableTypes = {
-                enabled = true,
+                enabled = false,
               },
             },
           },
@@ -55,7 +55,7 @@ return {
         },
         settings = {
           typescript = {
-            tsserver = {
+            server = {
               useSyntaxServer = false,
             },
             inlayHints = {
