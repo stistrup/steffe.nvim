@@ -42,7 +42,7 @@ return {
         },
       },
       -- TypeScript
-      tsserver = { -- Note: nvim-lspconfig uses 'tsserver', not 'ts_ls'
+      ts_ls = { -- Note: nvim-lspconfig uses 'tsserver', not 'ts_ls'
         filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
         init_options = {
           plugins = {
