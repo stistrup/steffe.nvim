@@ -62,7 +62,7 @@ return {
               includeInlayParameterNameHints = 'all',
               includeInlayParameterNameHintsWhenArgumentMatchesName = true,
               includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
+              includeInlayVariableTypeHints = false,
               includeInlayVariableTypeHintsWhenTypeMatchesName = true,
               includeInlayPropertyDeclarationTypeHints = true,
               includeInlayFunctionLikeReturnTypeHints = true,
