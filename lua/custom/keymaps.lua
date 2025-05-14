@@ -1,6 +1,10 @@
 local M = {}
 
 function M.setup()
+  -- Escape modes with kj
+  vim.keymap.set('i', 'kj', '<Esc>', { noremap = true, silent = true, desc = 'Escape Insert' })
+  vim.keymap.set('t', 'kj', '<C-\\><C-n>', { noremap = true, silent = true, desc = 'Escape Terminal' })
+
   -- Scroll up/down and center the cursor
   vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down and center' })
   vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up and center' })
