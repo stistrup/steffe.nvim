@@ -42,7 +42,7 @@ return {
         },
       },
       -- TypeScript
-      ts_ls = { -- Note: nvim-lspconfig uses 'tsserver', not 'ts_ls'
+      ts_ls = { -- ts_ls is correct, lsp has marked tsserver as deprecated
         filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
         init_options = {
           plugins = {

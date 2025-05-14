@@ -9,6 +9,9 @@ function M.setup()
   vim.keymap.set({ 'n', 'v', 'i', 'o' }, '$', '¤', {})
   vim.keymap.set({ 'n', 'v', 'i', 'o' }, '¤', '$', { desc = 'Go to end of line' })
   vim.keymap.set({ 'n', 'v', 'i', 'o' }, '€', '$', { desc = 'Go to end of line' })
+  
+  vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
+  vim.keymap.set('n', '<leader>q', ':cclose<CR>', { desc = 'Close quickfix window' })
 end
 
 return M
