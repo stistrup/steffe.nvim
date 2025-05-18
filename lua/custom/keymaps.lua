@@ -12,6 +12,9 @@ function M.setup()
   -- Swap $ and ¤ for easier end-of-line navigation
   vim.keymap.set({ 'n', 'v', 'i', 'o' }, '$', '¤', {})
   vim.keymap.set({ 'n', 'v', 'i', 'o' }, '¤', '$', { desc = 'Go to end of line' })
+
+  vim.keymap.set({ 'n' }, '<leader>o', 'o<Esc>', { desc = 'Create new line (below)' })
+  vim.keymap.set({ 'n' }, '<leader>O', 'O<Esc>', { desc = 'Create new line (above)' })
 end
 
 return M
